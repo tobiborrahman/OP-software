@@ -1,0 +1,110 @@
+.custom-col-billBook {
+    flex: 0 0 auto !important;
+    width: 20% !important;
+}
+
+.custom-col-reduced {
+    flex: 0 0 auto !important;
+    width: 13% !important;
+}
+
+.custom-col-date {
+    flex: 0 0 auto !important;
+    width: 10% !important;
+}
+
+.custom-sale-thead th {
+    position: sticky;
+    top: 0;
+    vertical-align: middle;
+
+}
+
+.scrollable-table-container {
+    height: 350px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 30px;
+}
+
+.custom-sale-table {
+    width: 100%;
+    table-layout: fixed !important;
+    padding: 2px !important;
+    overflow-y: auto;
+    
+}
+
+.custom-sale-table th,
+.custom-sale-table td {
+    font-size: 1.0rem;
+    padding: 1px !important;
+}
+
+.custom-sale-table .app-form-input {
+    font-size: 1.2rem !important;
+    font-weight: 300 !important;
+    padding: 3px !important;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.remarks-and-actions {
+    flex: 2;
+}
+
+.bill-summary {
+    flex: 1;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+.bill-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bill-summary table td,
+.bill-summary table th {
+    padding: 0.30rem;
+    border: 1px solid #ccc;
+    font-size: 1.1rem  !important;
+}
+
+.bill-summary table tbody tr {
+    line-height: 1;
+}
+
+/* Adjust the font size and padding inside the bill summary for smaller screens */
+@media (max-width: 768px) {
+    .bill-summary {
+        padding: 5px;
+        /* Even more reduced padding for smaller screens */
+    }
+
+    .bill-summary>div,
+    /* Assuming your content is wrapped in divs */
+    .bill-summary>p,
+    /* Or paragraphs */
+    .bill-summary>ul,
+    /* Or any list */
+    .bill-summary>li {
+        /* List items */
+        font-size: 0.9rem;
+        /* Smaller font size for compact look */
+        padding: 2px 0;
+        /* Reduced vertical padding */
+        margin: 2px 0;
+        /* Smaller margins to compact the layout */
+    }
+}
+
+@media (max-width: 768px) {
+    .actions button {
+        flex-basis: 100%;
+    }
+}

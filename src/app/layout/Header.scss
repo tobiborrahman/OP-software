@@ -1,0 +1,84 @@
+/* General styles for a more modern and professional look */
+.custom-navbar,
+.custom-navbar.sticky-top {
+	background-color: #f8f9fa;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	padding: 0rem 0rem;
+}
+.dropdown-on-hover:hover .dropdown-toggle {
+	color: #0056b3;
+	background-color: #f8f9fa;
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.custom-dropdown-menu .dropdown-item {
+	padding: 0.4rem 1rem !important;
+}
+
+.custom-dropdown-menu .dropdown-divider {
+	margin: 0 0 !important;
+}
+
+.dropdown-toggle {
+	font-size: 1.1rem !important;
+	font-weight: 600;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.custom-dropdown-menu {
+	font-size: 1.2rem !important;
+	text-align: left;
+	font-weight: 500;
+	border-radius: 0.25rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 300px;
+}
+.custom-dropdown-menu .dropdown-item:hover {
+	background-color: #007bff !important; // Bootstrap primary color
+	color: white !important;
+}
+@media (max-width: 576px) {
+	.navbar-toggler {
+		display: block;
+	}
+	// .navbar-collapse {
+		// display: none !important; // Ensuring collapse is respected on small devices
+	// }
+	/* Adapt sizes and padding for a mobile-friendly interface */
+	.nav-link {
+		padding: 0.5rem; // Reduced padding for space efficiency
+	}
+}
+
+.user-menu-toggle {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+
+	&:after {
+		display: none !important;
+		/* Hide default arrow icon */
+	}
+
+	.bi-person-circle {
+		font-size: 1.4rem;
+		/* Adjusted icon size */
+		color: #333;
+	}
+
+	&:hover,
+	&:focus {
+		background: transparent !important;
+
+		.bi-person-circle {
+			color: #555;
+			/* Slightly darker color on hover */
+		}
+	}
+}

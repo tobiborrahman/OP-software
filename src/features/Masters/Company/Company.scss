@@ -1,0 +1,85 @@
+.custom-table {
+	border-collapse: collapse !important;
+	width: 100% !important;
+	margin-bottom: 1rem !important;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) !important;
+	font-size: larger;
+}
+
+.custom-table th,
+.custom-table td {
+	padding: 0.5rem !important; // Increased padding for better spacing
+	vertical-align: middle !important;
+	border-top: 1px solid #dee2e6 !important;
+}
+
+.custom-table thead th {
+	vertical-align: bottom !important;
+	border-bottom: 2px solid #dee2e6 !important;
+}
+.custom-table tbody tr:hover {
+	cursor: pointer;
+}
+
+// Hover effect for table rows
+// .company-row {
+
+//     // Use &:hover for SCSS hover effect
+//     &:hover {
+//         background-color: #007bff !important;
+//         color: white !important;
+//         transition: background-color 0.2s ease-in-out !important;
+//     }
+// }
+
+// Style for table header
+.thead-light th {
+	background-color: #f8f9fa !important;
+	border-color: #dee2e6 !important;
+}
+
+// Button styles
+.action-btn {
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	transition: transform 0.1s ease-in-out;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+	.text-center {
+		text-align: center;
+	}
+
+	.custom-table th,
+	.custom-table td {
+		padding: 0.25rem !important; // Smaller padding on smaller screens
+	}
+}
+
+// Column width adjustments
+.custom-table .srno-column {
+	width: 10%; // Smaller width for serial number column
+}
+
+.custom-table .gstin-column {
+	width: 25%; // Smaller width for GSTIN column
+}
+
+.custom-table .action-column {
+	width: 25%; // Smaller width for action buttons
+}
+
+.custom-table .company-name-column {
+	width: 40%; // Larger width for company name
+}
+
+// company styles starts here
+.create-company-btn {
+	cursor: pointer !important;
+}
